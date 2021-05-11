@@ -36,21 +36,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etMail" />
 
-    <TextView
-        android:id="@+id/tvMensaje"
-        android:layout_width="96dp"
-        android:layout_height="72dp"
-        android:layout_marginEnd="299dp"
-        android:text="TextView"
-        android:textColor="#ff0000"
-        android:textSize="15sp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/btLogin"
-        app:layout_constraintEnd_toEndOf="@+id/etPassword"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword"
-        app:layout_constraintVertical_bias="0.0" />
+
 
     <Button
         android:id="@+id/btLogin"
@@ -61,7 +47,7 @@
         android:backgroundTint="#FFFFFF"
         android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPassword"
         app:rippleColor="@color/black" />
@@ -79,4 +65,18 @@
         app:layout_constraintTop_toBottomOf="@+id/btLogin"
         app:layout_constraintVertical_bias="0.319"
         app:rippleColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvMensaje"
+        android:layout_width="154dp"
+        android:layout_height="56dp"
+        android:text="¡¡Usuario o Password incorrecto!!"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/design_default_color_error"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 </androidx.constraintlayout.widget.ConstraintLayout>
